@@ -102,7 +102,7 @@ def football():
 @app.get("/hockey")
 def hockey():
     params = {
-        'sports': '27',
+        'sports': '10',
         'count': '50',
         'lng': 'en',
         'getEmpty': 'true',
