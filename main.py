@@ -99,8 +99,8 @@ def football():
         res_lst.append(cj)
     return {"Result" : res_lst}
 
-@app.get("/hockey")
-def hockey():
+@app.get("/tabletenis")
+def tableTenis():
     params = {
         'sports': '10',
         'count': '50',
