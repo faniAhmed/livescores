@@ -121,9 +121,13 @@ def tableTennis():
         sc = match["SC"]["FS"]#score
         if sc == {}:
             sc = {
-                "S1":"0",
-                "S2":"0"
+                "S1":0,
+                "S2":0
             }
+        if "S1" not in sc:
+            sc["S1"] = 0
+        if "S2" not in sc:
+            sc["S2"] = 0
         l = match["L"]#league
         t1 = match["O1"]#T1
         t2 = match["O2"]#T2
