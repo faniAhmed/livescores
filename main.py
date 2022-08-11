@@ -21,14 +21,11 @@ def cricket():
     res_lst = []
     for match in match_lst:
         try:
-            sc = match["SC"]["FS"]#score
+            sc = match["SC"]["S"]#score
         except Exception as e:
             print(e)
-        if sc == {}:
-            sc = {
-                "S1":"0",
-                "S2":"0"
-                }
+            sc = "0"
+
         l = match["L"]#league
         t1 = match["O1"]#T1
         t2 = match["O2"]#T2
