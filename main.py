@@ -118,6 +118,7 @@ def upcoming():
             "time" : time
             }
         lst.append(res)
+    return {"result" : lst} 
 
 
 @app.get("/cricket2")
