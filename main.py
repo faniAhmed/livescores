@@ -137,7 +137,7 @@ def cricket2():
     match_lst = rj["Value"]
     res_lst = []
     for match in match_lst:
-        link = "https://linebet.com/en/live/cricket/2448328" + str(match["LI"])
+        link = "https://linebet.com/en/live/cricket/" + str(match["LI"])
         sc = match["SC"]["FS"]#score
         if sc == {}:
             sc = {"S1":0,"S2":0}
@@ -241,7 +241,7 @@ def football():
     print(len(match_lst))
     res_lst = []
     for match in match_lst:
-        link = "https://linebet.com/en/live/cricket/2448328" + str(match["LI"])
+        link = "https://linebet.com/en/live/football/" + str(match["LI"])
         sc = match["SC"]["FS"]#score
         if sc == {}:
             sc = {"S1":0,"S2":0}
@@ -293,7 +293,7 @@ def tableTennis():
     print(len(match_lst))
     res_lst = []
     for match in match_lst:
-        link = "https://linebet.com/en/live/cricket/2448328" + str(match["LI"])
+        link = "https://linebet.com/en/live/table-tennis/" + str(match["LI"])
         sc = match["SC"]["FS"]#score
         if sc == {}:
             sc = {
