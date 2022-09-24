@@ -137,6 +137,7 @@ def cricket2():
     match_lst = rj["Value"]
     res_lst = []
     for match in match_lst:
+        link = match["LI"]
         sc = match["SC"]["FS"]#score
         if sc == {}:
             sc = {"S1":0,"S2":0}
@@ -165,6 +166,7 @@ def cricket2():
             "team2":t2,
             "location":loc,
             "type":Type,
+            "Link":link
         }
         res_lst.append(cj)
     return {"Result" : res_lst}
